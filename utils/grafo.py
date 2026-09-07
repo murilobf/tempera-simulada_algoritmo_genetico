@@ -2,7 +2,7 @@
 
 import numpy as np
 
-def gera_caixeiro_viajante(num_cidades, tam_grade=100, seed=None):
+def gera_caixeiro_viajante(num_cidades=10, tam_grade=100, seed=None):
 
     rng = np.random.default_rng(seed)
     coordenadas = rng.uniform(0, tam_grade, size=(num_cidades, 2))
